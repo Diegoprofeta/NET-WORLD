@@ -62,7 +62,7 @@ fun_atts () {
 
   [[ -e /tmp/att ]] && rm /tmp/att
 
-	wget -c -P /home https://raw.githubusercontent.com/Jeffssha/NET-WORLD/main/SSHPLUS/modulos/versao
+	wget -c -P /home https://raw.githubusercontent.com/Jeffssha/NET-WORLD/main/SSHPLUS/versao
 
 	[[ -f "/home/versao" ]] && mv /home/versao /tmp/att
 
@@ -70,9 +70,9 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;31mBy JEFF\033[1;36m"
+echo -e "                              \033[1;31mBy Jeffssh\033[1;36m"
 
-echo -e "NET WORLD" | figlet
+echo -e "   SSHPlus" | figlet
 
 echo " "
 
@@ -112,7 +112,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   echo -e "  \033[1;36mEXISTE UMA NOVA ATUALIZACAO DISPONIVEL!\033[1;33m\n"
 
-  echo -e "  \033[1;33mMAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Jeffssh\n"
+  echo -e "  \033[1;33mMAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@crazy_vpn\n"
 
   echo -e "  \033[1;32mDETALHES DA ATUALIZACAO:\033[0m\n"
 
@@ -155,3 +155,4 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
   fi
 
 }
+
