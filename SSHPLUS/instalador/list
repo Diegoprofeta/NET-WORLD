@@ -44,7 +44,7 @@ for _arq in ${_mdls[@]}; do
 	wget -c -P $_dir1 https://raw.githubusercontent.com/Jeffssha/NET-WORLD/main/SSHPLUS/modulos//$_arq 
 	chmod +x $_dir1/$_arq
 done
-mv $_dir1/cabecalho $_dir1/bot $_dir1/open.py $_dir1/proxy.py $_dir2
+mv $_dir1/cabecalho $_dir1/bot $_dir1/open.py $_dir1/proxy.py $_dir1/wsproxy.py $_dir2
 _arq_host="/etc/hosts"
 _host[0]="d1n212ccp6ldpw.cloudfront.net"
 _host[1]="dns.whatsapp.net"
