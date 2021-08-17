@@ -1,3 +1,4 @@
+#Jeffssh
 #!/bin/bash
 clear
 [[ "$(whoami)" != "root" ]] && {
