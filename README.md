@@ -11,4 +11,4 @@ DEBIAN 9
 apt-get update && apt-get upgrade -y; wget https://raw.githubusercontent.com/Jeffssha/NET-WORLD/main/SSHPLUS/Plus && chmod 777 Plus && ./Plus
 
 
-🟢 VERSAO: 3 🟢
+🟢 VERSAO: 6 🟢
