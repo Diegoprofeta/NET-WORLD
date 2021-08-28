@@ -1,9 +1,6 @@
-#!/bin/bash
-#====================================================
-#	SCRIPT: NET WORLD SSH
-#====================================================
+/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/licence) != "@Jeffssh" ]] && exit 0
+[[ $(awk -F" " '{print $2}' /usr/lib/licence) != "@CRAZY_VPN" ]] && exit 0
 fun_bar() {
     comando[0]="$1"
     comando[1]="$2"
@@ -34,7 +31,7 @@ fun_bar() {
 fun_botOnOff() {
     [[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) = '0' ]] && {
         clear
-        echo -e "\E[44;1;37m             INSTALADOR BOT NET WORLD SSH                \E[0m\n"
+        echo -e "\E[44;1;37m             INSTALADOR BOT NET WORLD SSH               \E[0m\n"
         echo -ne "\033[1;32mINFORME SEU TOKEN:\033[1;37m "
         read tokenbot
         echo ""
@@ -43,19 +40,16 @@ fun_botOnOff() {
         clear
         echo -e "\033[1;32mINICIANDO BOT NET WORLD SSH \033[0m\n"
         fun_bot1() {
-        	[[ "$(grep -wc '16' /etc/issue.net)" != '0' ]] && {
-        		wget -qO- sshplus.xyz/script/ShellBot.sh > /etc/SSHPlus/ShellBot.sh
-        	}
             [[ ! -e "/etc/SSHPlus/ShellBot.sh" ]] && {
 				wget -qO- https://raw.githubusercontent.com/shellscriptx/shellbot/master/ShellBot.sh >/etc/SSHPlus/ShellBot.sh
 			}
             cd /etc/SSHPlus
             screen -dmS bot_plus ./bot $tokenbot $iduser >/dev/null 2>&1
             [[ $(grep -wc "bot_plus" /etc/autostart) = '0' ]] && {
-                echo -e "ps x | grep 'bot_plus' | grep -v 'grep' || cd /etc/SSHPlus && sudo screen -dmS bot_plus ./bot $tokenbot $iduser && cd $HOME" >>/etc/autostart
+                echo -e "ps x | grep 'bot_plus' | grep -v 'grep' || cd /etc/SSHPlus && screen -dmS bot_plus ./bot $tokenbot $iduser && cd $HOME" >>/etc/autostart
             } || {
                 sed -i '/bot_plus/d' /etc/autostart
-                echo -e "ps x | grep 'bot_plus' | grep -v 'grep' || cd /etc/SSHPlus && sudo screen -dmS bot_plus ./bot $tokenbot $iduser && cd $HOME" >>/etc/autostart
+                echo -e "ps x | grep 'bot_plus' | grep -v 'grep' || cd /etc/SSHPlus && screen -dmS bot_plus ./bot $tokenbot $iduser && cd $HOME" >>/etc/autostart
             }
             [[ $(crontab -l | grep -c "verifbot") = '0' ]] && (
                 crontab -l 2>/dev/null
@@ -64,7 +58,7 @@ fun_botOnOff() {
             cd $HOME
         }
         fun_bar 'fun_bot1'
-        [[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && echo -e "\n\033[1;32m BOT SSHPLUS ATIVADO !\033[0m" || echo -e "\n\033[1;31m ERRO! REANALISE SUAS INFORMACOES\033[0m"
+        [[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && echo -e "\n\033[1;32m BOT NET WORLD SSH ATIVADO !\033[0m" || echo -e "\n\033[1;31m ERRO! REANALISE SUAS INFORMACOES\033[0m"
         sleep 2
         menu
     } || {
