@@ -2,10 +2,8 @@
 #===================================================
 #	SCRIPT: BOT PLUS MANAGER
 #   DATA ATT:   28 de Dez 2020
-#	DESENVOLVIDO POR:	CRAZY_VPN
+#	DESENVOLVIDO POR:	JEFFSSH
 #   API SHELLBOT:   SHAMAN
-#	CONTATO TELEGRAM:	http://t.me/crazy_vpn
-#	CANAL TELEGRAM:	http://t.me/sshplus
 #===================================================
 [[ ! -d /etc/SSHPlus ]] && exit 0
 [[ ! -d /etc/bot ]] && exit 0
