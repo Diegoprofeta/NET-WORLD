@@ -2031,11 +2031,6 @@ exit 0' >$RCLOCAL
 				sts8="\033[1;32m◉ "
 			} || {
 				sts8="\033[1;31m○ "
-			}
-			[[ "$(ps x | grep 'slow_dns' | grep -v 'grep'|wc -l)" != '0' ]] && {
-				sts9="\033[1;32m◉ "
-			} || {
-				sts9="\033[1;31m○ "
 			}            
 			[[ "$(netstat -tlpn | grep 'sslh' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mSSLH: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'sslh' | awk {'print $4'} | cut -d: -f2 | xargs)"
