@@ -1,6 +1,8 @@
 #!/bin/bash
-# By crazy_vpn
-# Pequeno script para permissao de autenticacao root
+#===================================================
+#	SCRIPT: PARA LIBERAR A SENHA ROOT
+#	DESENVOLVIDO POR: JEFFSSH
+#===================================================
 clear
 [[ "$(whoami)" != "root" ]] && {
 	clear
