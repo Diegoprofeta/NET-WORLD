@@ -1,26 +1,4 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%50s%s%-20s\n' "BadVPN 1.0 by Jeffssh" ; tput sgr0
-if [ -f "/usr/local/bin/badvpn-udpgw" ]
-then
-	tput setaf 3 ; tput bold ; echo ""
-	echo ""
-	echo "O BadVPN já foi instalado com sucesso."
-	echo "Digite o comando menu."
-	echo "" ; tput sgr0
-	exit
-else
-tput setaf 2 ; tput bold ; echo ""
-echo "Este é um script que compila e instala automaticamente o programa"
-echo "BadVPN em servidores Debian e Ubuntu para ativar o encaminhamento UDP"
-echo "Na porta padrão 7295, 7296, 7297, 7298, 7299 e 7300."
-echo "Permitindo assim a utilização do protocolo UDP para jogos online,"
-echo "chamadas VoIP e outras coisas interessantes."
-echo "" ; tput sgr0
-read -p "Deseja continuar? [s/n]: " -e -i n resposta
-if [[ "$resposta" = 's' ]]; then
-	echo ""
-	echo "A instalação pode demorar bastante... seja paciente!"
-	sleep 3
 clear
 fun_bar () {
 comando[0]="$1"
